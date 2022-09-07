@@ -73,3 +73,22 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Styling & Typography */
+
+body {
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  padding: max(2vh, 1rem);
+  color: #451111;
+  background-color: beige;
+  font-family: 'Lora';
+  width: max(20vw, 400px);
+}
+
+:root {
+  --flow-space: 3rem;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
