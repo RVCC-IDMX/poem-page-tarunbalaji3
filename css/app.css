@@ -78,11 +78,16 @@ select {
 
 body {
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  width: min(80vw, 800px);
   padding: max(2vh, 1rem);
   color: #451111;
   background-color: beige;
   font-family: 'Lora';
-  width: max(20vw, 400px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 :root {
